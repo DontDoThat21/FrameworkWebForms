@@ -14,5 +14,12 @@ namespace TylorTrubWebForms
 
         }
 
+        // Added missing event handler referenced by DropDownList in markup
+        protected void Unnamed10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Handle region selection change if needed
+            // var ddl = sender as DropDownList;
+            // string selected = ddl != null ? ddl.SelectedValue : string.Empty;
+        }
     }
 }

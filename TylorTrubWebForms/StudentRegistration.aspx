@@ -47,10 +47,10 @@
                                 <div class="col-md-4 col-md-offset-1">
                                     <div class="form-group">
                                         <asp:Label Text="Region" runat="server"></asp:Label>
-                                        <asp:DropDownList runat="server" OnSelectedIndexChanged="Unnamed10_SelectedIndexChanged" />
+                                        <asp:DropDownList runat="server" AutoPostBack="true" OnSelectedIndexChanged="Unnamed10_SelectedIndexChanged">
                                             <asp:ListItem Text="text1" />
                                             <asp:ListItem Text="text2" />
-                                        
+                                        </asp:DropDownList>
                                     </div>
                                 </div>
                                 <div class="col-md-4 col-md-offset-1">
