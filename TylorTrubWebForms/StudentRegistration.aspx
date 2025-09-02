@@ -162,7 +162,7 @@
     <div class="registration-container">
         <div class="container">
             <div class="form-card">
-                <h1 class="form-title">Student Registration</h1>
+                <h1 class="form-title p-2">Student Registration</h1>
                 
                 <div class="row form-row">
                     <div class="col-md-6">
