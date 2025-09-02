@@ -205,7 +205,47 @@
                         <div class="form-group-modern">
                             <asp:Label ID="lblProgram" runat="server" Text="Academic Program" CssClass="form-label-modern"></asp:Label>
                             <asp:TextBox ID="txtProgram" runat="server" CssClass="form-control form-control-modern" 
-                                placeholder="e.g., Computer Science, Engineering" MaxLength="100"></asp:TextBox>
+                                placeholder="e.g., Computer Science, Engineering" MaxLength="100" list="degreeOptions"></asp:TextBox>
+                            <!-- HTML5 datalist provides dropdown + type-ahead suggestions -->
+                            <datalist id="degreeOptions">
+                                <!-- Associate degrees -->
+                                <option value="Associate of Arts (AA)" />
+                                <option value="Associate of Science (AS)" />
+                                <option value="Associate of Applied Science (AAS)" />
+                                <!-- Bachelor degrees -->
+                                <option value="Bachelor of Arts (BA)" />
+                                <option value="Bachelor of Science (BS)" />
+                                <option value="Bachelor of Engineering (BEng)" />
+                                <option value="Bachelor of Fine Arts (BFA)" />
+                                <option value="Bachelor of Business Administration (BBA)" />
+                                <option value="Bachelor of Commerce (BCom)" />
+                                <option value="Bachelor of Architecture (BArch)" />
+                                <option value="Bachelor of Education (BEd)" />
+                                <option value="Bachelor of Nursing (BN)" />
+                                <option value="Bachelor of Laws (LLB)" />
+                                <!-- Master degrees -->
+                                <option value="Master of Arts (MA)" />
+                                <option value="Master of Science (MS)" />
+                                <option value="Master of Engineering (MEng)" />
+                                <option value="Master of Business Administration (MBA)" />
+                                <option value="Master of Education (MEd)" />
+                                <option value="Master of Fine Arts (MFA)" />
+                                <option value="Master of Public Health (MPH)" />
+                                <option value="Master of Information Systems (MIS)" />
+                                <option value="Master of Public Administration (MPA)" />
+                                <!-- Doctoral / Professional -->
+                                <option value="Doctor of Philosophy (PhD)" />
+                                <option value="Doctor of Medicine (MD)" />
+                                <option value="Juris Doctor (JD)" />
+                                <option value="Doctor of Dental Surgery (DDS)" />
+                                <option value="Doctor of Education (EdD)" />
+                                <option value="Doctor of Pharmacy (PharmD)" />
+                                <option value="Doctor of Osteopathic Medicine (DO)" />
+                                <!-- Certificates / Diplomas -->
+                                <option value="Graduate Certificate" />
+                                <option value="Postgraduate Diploma" />
+                                <option value="Certificate Program" />
+                            </datalist>
                             <asp:RequiredFieldValidator ID="rfvProgram" runat="server" 
                                 ControlToValidate="txtProgram" ErrorMessage="Academic program is required" 
                                 CssClass="validation-error" Display="Dynamic"></asp:RequiredFieldValidator>
