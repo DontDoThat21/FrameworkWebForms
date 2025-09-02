@@ -13,6 +13,13 @@ namespace TylorTrubWebForms
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+            // Route root URL to StudentRegistration.aspx
+            routes.MapPageRoute(
+                routeName: "Home",
+                routeUrl: string.Empty,
+                physicalFile: "~/StudentRegistration.aspx"
+            );
         }
     }
 }
